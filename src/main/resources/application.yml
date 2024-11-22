@@ -1,0 +1,20 @@
+
+server:
+  port: 7070
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/23Vvrangler/DAD-2024.git #link de github
+
+
+
+          search-paths: config-data
+          default-label: main
+  security:
+    user:
+      name: root
+      password: s3cr3t
